@@ -13,6 +13,6 @@ html, body {
   grid-template-columns: 1fr;
 }
 .appWrapper{
-  background-color: palevioletred;
+  background-color: rgb(201, 112, 142);
 }
 
