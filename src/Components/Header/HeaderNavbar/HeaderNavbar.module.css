@@ -1,0 +1,15 @@
+.list{
+    grid-gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    color: #f3fffa;
+}
+.active{
+    color: white;
+    cursor: default;
+}
+.item{
+    text-decoration: none;
+    color: white;
+}
