@@ -2,12 +2,14 @@ import React from "react";
 import chats from "./Chats.module.css"
 import ChatsCars from "./ChatsCars/ChatsCars";
 
-const Chats = () =>{
+const Chats = (props) =>{
+    // console.log(props);
+    const full = props.cars.cars.map(cars =>  <ChatsCars name={cars.name} id={cars.id} price={cars.price} sale={cars.sale}/>)
     return(
         <div className={chats.chats}>
             <h2 className={chats.title}>chats</h2>
             <div className={chats.wrapper}>
-            <ChatsCars/>
+            {full}
             </div>
         </div>
     )

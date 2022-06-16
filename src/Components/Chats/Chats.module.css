@@ -3,12 +3,15 @@
     grid-column: 2/3;
     grid-row: 2/3;
     background-color: darkgrey;
-    padding-top: 200px;
+    padding: 0px;
 }
-.title {
-    margin: auto;
-    font-size: 48px;
-    align-content: space-around;
-    text-align: center;
+.title{
+    margin: 50px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px;
+    padding: 30px;
 }
 

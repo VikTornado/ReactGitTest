@@ -10,7 +10,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 
 function App(props) {
-    // debugger
+// console.log(props);
     return (
         <BrowserRouter>
             <div className="App">
@@ -20,7 +20,7 @@ function App(props) {
                     <Routes>
                         <Route path="/main" element={<Main/>}/>
                         <Route path="/home" element={<Home home={props.state}/>}/>
-                        <Route path="/chats" element={<Chats/>}/>
+                        <Route path="/chats" element={<Chats cars={props.state}/>}/>
                         <Route path="/products" element={<Products/>}/>
                     </Routes>
                 </div>
