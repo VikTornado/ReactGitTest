@@ -5,6 +5,7 @@ const Products = () =>{
     return(
         <div className={products.products}>
             <h2 className={products.title}>products</h2>
+            <p>{Math.round(Math.random() *100)}</p>
         </div>
     )
 }

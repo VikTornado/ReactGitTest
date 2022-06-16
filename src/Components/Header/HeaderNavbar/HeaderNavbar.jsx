@@ -8,6 +8,7 @@ const HeaderNavbar = (props) => {
             <NavLink to={"/main"} className={nav.item}>Main</NavLink>
             <NavLink to={"/home"} className={nav.item}>Home</NavLink>
             <NavLink to={"/products"} className={nav.item}>Products</NavLink>
+            <NavLink to={"/profile"} className={nav.item}>Profile</NavLink>
             <NavLink to={"/chats"} className={nav.item}>Chats</NavLink>
         </ul>
     )
