@@ -5,8 +5,9 @@ import Main from "./Components/Main/Main";
 import Products from "./Components/Products/Products";
 import Chats from "./Components/Chats/Chats";
 import Home from "./Components/Home/Home";
-import Sidebar from "./Components/Sidebar/Sidebar";
+// import Sidebar from "./Components/Sidebar/Sidebar";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
+
 
 function App(props) {
     // debugger
