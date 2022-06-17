@@ -14,4 +14,14 @@
     margin: 50px;
     padding: 30px;
 }
+.textareaButton{
+display: flex;
+flex: auto;
+}
+.textarea{
+    display: block;
+}
+.button{
+    display: block;
+}
 
