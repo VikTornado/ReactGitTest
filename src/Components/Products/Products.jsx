@@ -4,7 +4,6 @@ import ProductsCars from "./ProductsCars/ProductsCars";
 
 const Products = (props) => {
   let titlePage = "Products";
-  // const yaerCar = Math.round(Math.random() *10000)
 
   const carName = {
     name: [{ name: "bmw" }, { name: "volvo" }, { name: "audi" }],

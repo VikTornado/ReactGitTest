@@ -12,12 +12,20 @@ const Chats = (props) => {
       sale={cars.sale}
     />
   ));
+
+  let textArea = React.createRef();
+
+  let addCars = () => {
+    let text = textArea.current.value;
+    alert(text);
+  };
+
   return (
     <div className={chats.chats}>
       <h2 className={chats.title}>chats</h2>
       <div className={chats.textareaButton}>
-        <textarea className={chats.textarea}></textarea>
-        <button onClick={() => alert("ksjdksjd")} className={chats.button}>
+        <textarea ref={textArea} className={chats.textarea}></textarea>
+        <button onClick={addCars} className={chats.button}>
           click me
         </button>
       </div>
