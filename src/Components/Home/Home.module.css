@@ -5,3 +5,31 @@
     background-color: darkgrey;
 
 }
+.block{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 20px;
+    width: 900px;
+    margin: auto;
+    padding-top: 100px;
+}
+.left{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+
+}
+.right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+}
+.textarea{
+
+}
+.button{
+    display: block;
+    width: 100px;
+
+}

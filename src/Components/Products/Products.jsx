@@ -13,6 +13,13 @@ const Products = (props) => {
       { year: Math.round(Math.random() * 10000) },
     ],
   };
+
+  let refPost = React.createRef();
+
+  let newPost = () => {
+    let bestPost = refPost.current.value;
+    alert(bestPost);
+  };
   return (
     <div className={products.products}>
       <ProductsCars
@@ -22,7 +29,10 @@ const Products = (props) => {
       />
       <ProductsCars name={carName.name[1].name} year={carName.years[1].year} />
       <ProductsCars name={carName.name[2].name} year={carName.years[2].year} />
-      <button onChange={""}>push</button>
+      <div className={products.block}>
+        <textarea ref={refPost}></textarea>
+        <button onClick={newPost}>push</button>
+      </div>
     </div>
   );
 };
