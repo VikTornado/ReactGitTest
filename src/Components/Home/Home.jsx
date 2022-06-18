@@ -2,7 +2,7 @@ import React from "react";
 import home from "./Home.module.css";
 import HomePage from "./HomePage/HomePage";
 
-const sHome = (props) => {
+const Home = (props) => {
   const linkDataNew = props.home.listTo.map((user) => (
     <HomePage id={user.id} name={user.name} />
   ));
