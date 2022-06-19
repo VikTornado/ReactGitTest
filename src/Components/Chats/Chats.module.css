@@ -13,10 +13,12 @@
     grid-template-columns: repeat(3, 1fr);
     margin: 50px;
     padding: 30px;
+    margin: auto;
 }
 .textareaButton{
 display: flex;
 flex: auto;
+justify-content: center;
 }
 .textarea{
     display: block;
