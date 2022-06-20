@@ -18,6 +18,7 @@ const Chats = (props) => {
   let addCars = () => {
     let text = textArea.current.value;
     alert(text);
+    textArea.current.value = "";
   };
 
   return (

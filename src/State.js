@@ -1,3 +1,5 @@
+import { rerenderRoot } from "./render";
+
 const State = {
   listTo: [
     { id: "viktor", name: "Viktor" },
@@ -15,6 +17,17 @@ const State = {
     { name: "Bmw4", id: "5", sale: "sale5", price: 125 },
     { name: "Bmw5", id: "6", sale: "sale6", price: 126 },
   ],
+};
+
+export let addCars = () => {
+  let newCar = {
+    name: "name",
+    id: "0",
+    sale: "sales0",
+    price: "000",
+  };
+  State.cars.push.name(newCar);
+  rerenderRoot(State);
 };
 
 export default State;
