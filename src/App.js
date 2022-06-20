@@ -7,6 +7,7 @@ import Profile from "./Components/Profile/Profile";
 import Chats from "./Components/Chats/Chats";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
+import TestPage from "./Components/TestPage/TestPage";
 // import Sidebar from "./Components/Sidebar/Sidebar";
 import { Route, Routes } from "react-router-dom";
 
@@ -24,6 +25,7 @@ function App(props) {
           <Route path="/profile" element={<Profile />} />
           <Route path="/products" element={<Products />} />
           <Route path="/about" element={<About />} />
+          <Route path="/testpage" element={<TestPage />} />
         </Routes>
       </div>
       <Footer />
