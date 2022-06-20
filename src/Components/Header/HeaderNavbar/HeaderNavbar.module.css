@@ -5,8 +5,8 @@
     grid-template-rows: 1fr;
     color: #f3fffa;
 }
-.active{
-    color: white;
+.ActiveLink{
+    color: rgb(33, 14, 14);
     cursor: default;
 }
 .item{

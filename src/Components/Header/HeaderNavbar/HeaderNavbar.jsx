@@ -3,6 +3,9 @@ import nav from "./HeaderNavbar.module.css";
 import { NavLink } from "react-router-dom";
 
 const HeaderNavbar = (props) => {
+  // let ActiveLink = ({isActive}) => isActive ? red : blue
+  //   className={({isActive})=>isActive ? s.activeLink : ' '}
+  //   let style = (isActive) => ({ color: isActive ? "green" : "blue" });
   return (
     <ul className={nav.list}>
       <NavLink to={"/main"} className={nav.item}>
