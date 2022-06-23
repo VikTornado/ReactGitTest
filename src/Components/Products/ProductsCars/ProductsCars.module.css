@@ -8,3 +8,23 @@
     padding: 0px;
     margin: 0px;
 }
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item{
+    display: block;
+}
+.blockText{
+    display: flex;
+    align-items: center;
+}
+.link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.item{
+    display: block;
+}

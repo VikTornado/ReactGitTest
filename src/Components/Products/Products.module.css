@@ -5,9 +5,18 @@
     background-color: darkgrey;
 }
 .block{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
+}
+.blockText{
+    display: flex;
+    margin: auto;
+}
+.textarea{
+    display: block;
+}
+.button{
+    display: block;
 }

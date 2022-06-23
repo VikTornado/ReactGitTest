@@ -6,6 +6,7 @@ const Main = (props) => {
   let addClick = () => {
     let addPost = addRef.current.value;
     alert(addPost);
+      addRef.current.value = "";
   };
   return (
     <div className={main.main}>

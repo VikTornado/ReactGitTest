@@ -4,18 +4,19 @@ import HomePage from "./HomePage/HomePage";
 
 const Home = (props) => {
   const linkDataNew = props.home.listTo.map((user) => (
-    <HomePage id={user.id} name={user.name} />
-  ));
+    <HomePage id={user.id} name={user.name} />));
   let addNewRef = React.createRef();
   let addPost = () => {
     let addRef = addNewRef.current.value;
-    alert(addRef);
+    props.addlistNew(addRef);
   };
 
   let addRefSec = React.createRef();
   let addSec = () => {
+    // debugger;
     let addReffSec = addRefSec.current.value;
     alert(addReffSec);
+    addRefSec.current.value = ""
   };
   return (
     <div className={home.home}>

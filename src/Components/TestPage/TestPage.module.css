@@ -1,21 +1,9 @@
-.main {
-    height: 100%;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-color: darkgrey;
+.textareaBlock{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    background-color: cornflowerblue;
+    color: #f3fffa;
 }
 
-.title {
-    margin: auto;
-    font-size: 48px;
-    align-content: space-around;
-    text-align: center;
-}
-.textareaBlock{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 20px;
-    width: 500px;
-    margin: auto;
-}

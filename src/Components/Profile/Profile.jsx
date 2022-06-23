@@ -6,6 +6,7 @@ const Profile = () => {
   let addPost = () => {
     let addPostNew = ref.current.value;
     alert(addPostNew);
+      ref.current.value = "";
   };
 
   return (

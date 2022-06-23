@@ -26,7 +26,7 @@ const HeaderNavbar = (props) => {
       <NavLink to={"/about"} className={nav.item}>
         About
       </NavLink>
-      <NavLink to={"/testpage"} className={nav.item}>
+        <NavLink to={"/test"} className={nav.item}>
         TestPage
       </NavLink>
     </ul>
