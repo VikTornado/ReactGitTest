@@ -12,7 +12,8 @@
 }
 .blockText{
     display: flex;
-    margin: auto;
+    justify-content: center;
+    padding: 20px;
 }
 .textarea{
     display: block;

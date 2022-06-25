@@ -11,3 +11,9 @@
     align-content: space-around;
     text-align: center;
 }
+.textareaBlock{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+
+}

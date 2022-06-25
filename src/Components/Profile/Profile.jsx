@@ -12,7 +12,7 @@ const Profile = () => {
   return (
     <div className={profile.profile}>
       <h2 className={profile.title}>Profile</h2>
-      <div>
+      <div className={profile.textareaBlock}>
         <textarea ref={ref}></textarea>
         <button onClick={addPost}>push</button>
       </div>

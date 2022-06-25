@@ -21,14 +21,17 @@ const State = {
         {name: "Viktor"},
         {name: "Yuriy"}
     ],
+    newTextPage: "Yuriy",
     prod: [
         {item: "say hello"},
         {item: "how is your business"}
     ],
     about: [
-        {name: "Viktor", year: 2000},
-        {name: "Oleg", year: 2001},
-    ]
+        {name: "Viktor"},
+        {name: "Oleg"},
+        {name: "Bolt"},
+    ],
+    aboutPost: "Viktor",
 };
 
 export let addlistNew = (name) => {
@@ -66,12 +69,13 @@ export let addTextArea = (name) => {
 export let addAboutRef = (message) => {
     let newAbout = {
         name: message,
-        year: 2000,
     }
     State.about.push(newAbout)
-
     rerenderRoot(State)
 }
-
+export let updateAddTextArea = (newTextPage) => {
+    State.newTextPage = newTextPage
+    rerenderRoot(State);
+};
 
 export default State;
