@@ -3,7 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import {addAboutRef, addCars, addlistNew, addTextArea, addTextArea2, updateAddTextArea} from "./State";
+import {
+    addAboutRef,
+    addCars,
+    addlistNew,
+    addTextArea,
+    addTextArea2,
+    updateNewPostText
+} from "./State";
 
 export let rerenderRoot = (State) => {
   const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,7 +24,7 @@ export let rerenderRoot = (State) => {
             addTextArea2={addTextArea2}
             addlistNew={addlistNew}
             addAboutRef={addAboutRef}
-            updateAddTextArea={updateAddTextArea}
+            updateNewPostText={updateNewPostText}
         />
       </React.StrictMode>
     </BrowserRouter>

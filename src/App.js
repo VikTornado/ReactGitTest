@@ -30,7 +30,11 @@ function App(props) {
                     <Route
                         path="/products" element={<Products prod={props.state}
                                                             addTextArea2={props.addTextArea2}/>}/>
-                    <Route path="/test" element={<Test name={props.state}/>}/>
+                    <Route path="/test" element={<Test name={props.state}
+                                                       addAboutRef={addAboutRef}
+                                                       newPostText={props.newPostText}
+                                                       updateNewPostText={props.updateNewPostText}
+                    />}/>
                 </Routes>
             </div>
             <Footer/>

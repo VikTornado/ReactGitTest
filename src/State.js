@@ -32,6 +32,7 @@ const State = {
         {name: "Bolt"},
     ],
     aboutPost: "Viktor",
+    newPostText: "It-kama",
 };
 
 export let addlistNew = (name) => {
@@ -39,7 +40,7 @@ export let addlistNew = (name) => {
         id: "0",
         name: name
     }
-    State.listTo.push(newName)
+    State.aboutPost.push(newName)
     rerenderRoot(State)
 }
 export let addTextArea2 = (name) => {
@@ -73,9 +74,9 @@ export let addAboutRef = (message) => {
     State.about.push(newAbout)
     rerenderRoot(State)
 }
-export let updateAddTextArea = (newTextPage) => {
-    State.newTextPage = newTextPage
-    rerenderRoot(State);
-};
+export let updateNewPostText = (text) => {
+    State.about = text
+    rerenderRoot(State)
+}
 
 export default State;

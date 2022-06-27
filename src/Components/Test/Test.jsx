@@ -8,14 +8,18 @@ const Test = (props) => {
     let refTest = React.createRef()
     let testButton = () => {
         let text = refTest.current.value
-        alert(text)
+        props.addAboutRef(text)
         refTest.current.value = ""
+    }
+    let onChange = () => {
+        let text = refTest.current.value
+        props.updateNewPostText(text)
     }
     return (
         <div>
             <h1>Test</h1>
             <div className={test.block}>
-                <textarea ref={refTest} className={test.textarea}></textarea>
+                <textarea onChange={onChange} ref={refTest} className={test.textarea} value={props.newPostText}/>
                 <button onClick={testButton} className={test.button}>Test button</button>
             </div>
             {addTest}
