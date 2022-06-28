@@ -8,8 +8,7 @@ import {
     addCars,
     addlistNew,
     addTextArea,
-    addTextArea2,
-    updateNewPostText
+    addTextArea2, probData, updateNewPostText,
 } from "./State";
 
 export let rerenderRoot = (State) => {
@@ -24,7 +23,12 @@ export let rerenderRoot = (State) => {
             addTextArea2={addTextArea2}
             addlistNew={addlistNew}
             addAboutRef={addAboutRef}
+            newPostText={State.newPostText}
             updateNewPostText={updateNewPostText}
+            //-----------------------------------------//
+            probData={probData}
+            //-----------------------------------------//
+
         />
       </React.StrictMode>
     </BrowserRouter>

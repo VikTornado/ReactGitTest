@@ -6,7 +6,10 @@ const Products = (props) => {
     let addRef = React.createRef()
     let addClick = () => {
         let text = addRef.current.value
-        props.addTextArea2(text)
+        //-----------------------------------------//
+        props.probData(text)
+        //-----------------------------------------//
+
         addRef.current.value = ""
     }
     let addProdNew = props.prod.prod.map(item => <ProductsCars item={item.item}/>)

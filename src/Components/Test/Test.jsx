@@ -4,12 +4,14 @@ import test from "./Test.module.css"
 
 const Test = (props) => {
     console.log(props)
-    let addTest = props.name.about.map(name => <TestLink name={name.name}/>)
+    let addTest = () => {
+        props.name.about.map(name => <TestLink name={name.name} />)
+    }
     let refTest = React.createRef()
     let testButton = () => {
         let text = refTest.current.value
         props.addAboutRef(text)
-        refTest.current.value = ""
+        props.updateNewPostText(" ")
     }
     let onChange = () => {
         let text = refTest.current.value

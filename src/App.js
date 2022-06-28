@@ -8,8 +8,9 @@ import Chats from "./Components/Chats/Chats";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import {Route, Routes} from "react-router-dom";
-import {addAboutRef, addCars, addlistNew} from "./State";
+import {addAboutRef, addCars, addlistNew, probData} from "./State";
 import Test from "./Components/Test/Test";
+import Prob from "./Components/Prob/Prob";
 
 
 function App(props) {
@@ -29,12 +30,18 @@ function App(props) {
                                                          aboutPost={props.aboutPost}/>}/>
                     <Route
                         path="/products" element={<Products prod={props.state}
-                                                            addTextArea2={props.addTextArea2}/>}/>
+                                                            addTextArea2={props.addTextArea2}
+                                                            probData={probData}/>}/>
                     <Route path="/test" element={<Test name={props.state}
                                                        addAboutRef={addAboutRef}
                                                        newPostText={props.newPostText}
                                                        updateNewPostText={props.updateNewPostText}
                     />}/>
+                    //-----------------------------------------//
+
+                    <Route path="/prob" element={<Prob prob={props.state} probData={probData}/>}/>
+                    //-----------------------------------------//
+
                 </Routes>
             </div>
             <Footer/>

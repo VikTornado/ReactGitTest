@@ -3,6 +3,7 @@ import test from "./Test.module.css"
 import {NavLink} from "react-router-dom";
 
 const TestLink =(props)=>{
+    console.log(props)
     return(
         <div>
             <ul className={test.link}>

@@ -26,6 +26,9 @@ const HeaderNavbar = (props) => {
         <NavLink to={"/test"} className={nav.item}>
         Test
       </NavLink>
+        <NavLink to={"/prob"} className={nav.item}>
+        Prob
+      </NavLink>
     </ul>
   );
 };

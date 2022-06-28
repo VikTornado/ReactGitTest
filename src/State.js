@@ -1,6 +1,10 @@
 import {rerenderRoot} from "./render";
 
 const State = {
+    prob: [
+        {name: "Sergey"},
+        {name: "Nikolay"},
+    ],
     listTo: [
         {id: "viktor", name: "Viktor"},
         {id: "stepan", name: "Stepan"},
@@ -22,10 +26,14 @@ const State = {
         {name: "Yuriy"}
     ],
     newTextPage: "Yuriy",
+    //-----------------------------------------//
+
     prod: [
         {item: "say hello"},
         {item: "how is your business"}
     ],
+    //-----------------------------------------//
+
     about: [
         {name: "Viktor"},
         {name: "Oleg"},
@@ -34,6 +42,7 @@ const State = {
     aboutPost: "Viktor",
     newPostText: "It-kama",
 };
+window.state = State
 
 export let addlistNew = (name) => {
     let newName = {
@@ -75,8 +84,20 @@ export let addAboutRef = (message) => {
     rerenderRoot(State)
 }
 export let updateNewPostText = (text) => {
-    State.about = text
+    State.newPostText = text
     rerenderRoot(State)
 }
+
+//-----------------------------------------//
+export let probData = (name) => {
+    let newProbData = {
+        name: name
+    }
+    State.prob.push(newProbData)
+    rerenderRoot()
+}
+//-----------------------------------------//
+
+
 
 export default State;
